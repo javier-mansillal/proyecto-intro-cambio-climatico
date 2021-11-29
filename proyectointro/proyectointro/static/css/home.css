@@ -1,0 +1,49 @@
+.column {
+    float:left;
+    padding-top: 170px;
+    padding-left: 260px;
+    left: 93px;
+    top: 400px;
+    width: 248px;
+    height: 246px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display:table;
+}
+
+#arbol{
+    background-color: #37A801;
+    border-radius:150px;
+}
+
+#fabrica{
+    background-color: #860303;
+    border-radius:150px;
+}
+
+#metano{
+    background-color: #00C9F5;
+    border-radius:150px;
+
+}
+
+#valparaiso{
+    background-color:#FFF500;
+    border-radius:150px;
+    transform: rotate(20.72deg);
+}
+
+#que-hacer{
+    background-color: #6B9670;
+    border-radius:150px;
+}
+
+#cambio-climatico{
+    background-color: #864203;
+    border-radius:150px;
+}

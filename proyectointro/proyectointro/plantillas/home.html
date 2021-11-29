@@ -1,0 +1,49 @@
+{%load static%}
+<html>
+{% include "barra.html" %}
+<head>
+<title> Inicio </title>
+<link type='text/css' href='{% static "css/home.css" %}' rel='stylesheet'>
+</head>
+<div class="row">
+  
+  <div class="column">
+    <a href="http://127.0.0.1:8000/ong/">
+    <img src='{% static "images/arbol.png" %}' alt="Árbol" style="width:100%" id="arbol">
+    </a>
+    <h1>ONG<h1>
+  </div>
+  <div class="column">
+    <a href="http://127.0.0.1:8000/dioxido_de_carbono/">
+    <img src='{% static "images/fabrica.png" %}' alt="Fábrica" style="width:100%" id="fabrica">
+    </a>
+    <h1>Dióxido de carbono<h1>
+  </div>
+  <div class="column">
+    <a href="http://127.0.0.1:8000/metano/">
+    <img src='{% static "images/metano.png" %}' alt="Metano" style="width:100%" id= "metano">
+    </a>
+    <h1>Metano<h1>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href="http://127.0.0.1:8000/valparaiso/">
+    <img src='{% static "images/chile.png" %}' alt="Valparaíso" style="width:100%" id="valparaiso">
+    </a>
+    <h1>Valparaíso<h1>
+  </div>
+  <div class="column">
+    <a href="http://127.0.0.1:8000/que_hacer/">
+    <img src='{% static "images/reciclar.png" %}' alt="¿Qué hacer?" style="width:100%" id="que-hacer">
+    </a>
+    <h1>¿Qué hacer?<h1>
+  </div>
+  <div class="column">
+    <a href="http://127.0.0.1:8000/cambio_climatico">
+    <img src='{% static "images/arbol-seco.png" %}' alt="Cambio Climático" style="width:100%" id= "cambio-climatico">
+    </a>
+    <h1>Cambio climático<h1>
+  </div>
+</div>
+</html>
