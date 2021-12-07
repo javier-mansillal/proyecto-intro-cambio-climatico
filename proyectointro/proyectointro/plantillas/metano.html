@@ -1,0 +1,31 @@
+{% load static%}
+{% include "barra.html" %}
+<html>
+<head>
+<title> Metano </title>
+<link type='text/css' href='{% static "css/metano.css" %}' rel='stylesheet'>
+</head>
+<body>
+    <div id="texto">
+    <p>El metano es un hidrocarburo, de formula química CO4, es uno los gases de invernaderos más importantes, posee un potencial de 25 GWP, es decir, que cada tonelada de metano
+    afecta de la misma manera que 25 toneladas de CO2. El ser humano lo produce de distintas maneras, como por ejemplo, en la producción de energía, los basureros, la ganadería,
+    tratamiento de desechos, la combustión de biomasa, entre otras fuentes. 
+    </p>
+    </div>
+    <div id="main-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Actividad</th><th>Cantidad (kt)</th>
+                </tr>
+            </thead>
+            {% for c in listaMetano%}
+            <tr>
+                <td>{{c.actividad}}</td>
+                <td>{{c.cantidad}}</td>
+            </tr> 
+            {% endfor%}   
+        </table>
+    </div>
+</body>
+</html>

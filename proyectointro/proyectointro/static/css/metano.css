@@ -1,0 +1,42 @@
+#texto{
+    float:left;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 93px;
+
+    width: auto;
+    height: 246px;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+}
+
+#main-container{
+    margin: 5px auto;
+    width: 600px;
+}
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width:100%
+}
+
+th,td{
+    padding: 20px;
+}
+
+thead{
+    background-color: #6B9670;
+    border-bottom: solid 5px #0f362d;
+    color:black;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover{
+    background-color: mediumseagreen;
+    color:white;
+}

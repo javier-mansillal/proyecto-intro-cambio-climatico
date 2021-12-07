@@ -1,12 +1,10 @@
 from django.http import HttpResponse
 from django.template import Template, Context
+from django.shortcuts import render
+from apps.metano.models import Metano
+
 def paginaInicio(request):
-    plantillaInicio = open("../proyectointro/proyectointro/plantillas/home.html", encoding="utf-8")
-    template = Template(plantillaInicio.read())
-    plantillaInicio.close()
-    context = Context()
-    documento = template.render(context)
-    return HttpResponse(documento)
+    return render(request, "home.html", {})
 
 def ong(request):
     return HttpResponse("<p style='color: red;'>Aquí va la información de ONG.<p>")
@@ -15,7 +13,8 @@ def dioxidoCarbono(request):
     return HttpResponse("<p style='color: red;'>Aquí va la información de dióxido de carbono.<p>")
 
 def metano(request):
-    return HttpResponse("<p style='color: red;'>Aquí va la información de metano.<p>")
+    metanoLista = Metano.objects.all()
+    return render(request, "metano.html", {"listaMetano": metanoLista})
 
 def valparaiso(request):
     return HttpResponse("<p style='color: red;'>Aquí va la información de Valparaíso.<p>")
