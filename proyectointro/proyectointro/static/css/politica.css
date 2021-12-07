@@ -8,9 +8,9 @@
     background-color:#07e7c9 ;
 }
 .todo{
-    color: white;
-    border:10px solid rgb(255, 255, 255);
-    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #07e7c9;
+    width: 50% ;
     margin:auto;
     text-align: center;
     background-color: rgb(0, 0, 0);
