@@ -53,3 +53,6 @@ def compostaje(request):
     context4=Context()
     documento4 = template4.render(context4)
     return HttpResponse(documento4)
+
+def encuesta(request):
+    return render(request,'encuesta.html',{})
