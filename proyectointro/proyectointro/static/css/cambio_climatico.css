@@ -1,11 +1,7 @@
-*{
+#cambioclimatico{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-
-body{
     font-family: "open sans";
     padding: 10px 50px 60px;
 }

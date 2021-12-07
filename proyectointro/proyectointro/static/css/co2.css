@@ -2,9 +2,12 @@
 body{
     background-color: rgb(107, 238, 118);
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
 }
 
+#titulo1{
+    text-align: center;
+    text-decoration: underline;
+}
 
 #main-container{
     margin: 70px auto;
