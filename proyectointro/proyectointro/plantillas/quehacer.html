@@ -1,0 +1,35 @@
+{%load static%}
+<html>
+{% include "barra.html" %}
+<head>
+    <title> ¿Qué hacer? </title> 
+    <link type="text/css" href='{% static "css/quehacer.css" %}' rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="row">
+  
+        <div class="column">
+          <a href="http://127.0.0.1:8000/que_hacer/politica/">
+          <img src='{% static "images/politica.png" %}' alt="Política" style="width:100%" id="politica">
+          </a>
+          <h1>Política<h1>
+        </div>
+        <div class="column">
+          <a href="http://127.0.0.1:8000/que_hacer/agua/">
+          <img src='{% static "images/agua.png" %}' alt="Agua" style="width:100%" id="agua">
+          </a>
+          <h1>Agua<h1>
+        </div>
+        <div class="column">
+          <a href="http://127.0.0.1:8000/que_hacer/compostaje/">
+          <img src='{% static "images/compostaje.png" %}' alt="Compostaje" style="width:100%" id= "compostaje">
+          </a>
+          <h1>Compostaje<h1>
+        </div>
+      </div>
+</body>
+
+</html>

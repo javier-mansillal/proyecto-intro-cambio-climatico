@@ -1,0 +1,39 @@
+.column {
+    float:left;
+    padding-top: 350px;
+    padding-left: 260px;
+    left: 93px;
+    top: 500px;
+    width: 248px;
+    height: 246px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display:table;
+}
+
+#politica{
+    background-color: black;
+    width: 246px;
+    height: 246px;
+    border-radius:150px;
+}
+
+#agua{
+    background-color: #860303;
+    width: 246px;
+    height: 246px;
+    border-radius:150px;
+}
+
+#compostaje{
+    background-color: gray;
+    width: 246px;
+    height: 246px;
+    border-radius:150px;
+
+}
