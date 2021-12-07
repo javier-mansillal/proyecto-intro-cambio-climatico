@@ -1,0 +1,101 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='{% static "css/Ong.css" %}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h1 class="tiulo">Fima</h1>
+            <div class="contenedor-sobre-nosotros">
+                <img src='{% static "images/Fima.png" %}' alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span></span>¿Quiénes son?</h3>
+                    <p>Fima es una organización no gubernamental sin fines de lucro, que desde 1998 trabaja promoviendo el derecho de vivir en un medioambiente sano y la protección de la naturaleza.</p>
+                    <h3><span></span>¿Cómo ayudar?</h3>
+                    <p>A través de su página web <a href="https://www.fima.cl/wordpress/">www.fima.cl</a> podrás encontrar las distintas iniciativas, articulos sobre el cambio climático y maneras de ayudar que involucran una amplia visión de la legislación ambiental en Chile. </p>
+                </div>
+            </div>
+            <h2 class="tiulo">Fundacion Terram</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src='{% static "images/Terram.jpg" %}' alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span></span>¿Quiénes son?</h3>
+                    <p>Desde 1997, fundación Terram es una ONG que nació con la idea de aportar al país en materia del cambio climático y cambiar la mentalidad de las personas por una más verde y sustentable. Además podrás encontrar las últimas noticias con respecto al medioambiente.</p>
+                    <h3><span></span>¿Cómo ayudar?</h3>
+                    <p>En su página web <a href="https://www.terram.cl">terram.cl</a>, además de ver en profundidad como actúan en pos del medioambiente, también pudes aportar a la causa con donaciones.</p>
+                </div>
+            </div>
+            <h2 class="tiulo">Team Seas</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src='{% static "images/Team_seas.png" %}' alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span></span>¿Quiénes son?</h3>
+                    <p>Team seas es una ONG que ultimamente se ha hecho conocida a través del youtuber 'Mr. Beast' y que tiene como objetivo limpiar los océanos con una moderna tecnología. Su eslogan es "Por cada dólar habrá una libra menos de basura en el océano".</p>
+                    <h3><span></span>¿Cómo ayudar?</h3>
+                    <p>Puedes donar a través de su página web <a href="https://teamseas.org">teamseas.org</a> y así apoyar esta noble causa. </p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Otras ONG</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src='{% static "images/wwf.png" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "images/pointer.webp" %}' alt="">
+                            <a href="https://www.wwf.cl"><p>Acerca de</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "images/Logo-Valpo-Interviene.png" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "images/pointer.webp" %}' alt="">
+                            <a href="https://www.valpointerviene.cl"><p>Acerca de</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "images/Naturalia.png" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "images/pointer.webp" %}' alt="">
+                            <a href="https://naturalia.org.mx/WP/"><p>Acerca de</p></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo">Campañas contra el cambio climáico</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src='{% static "images/camp1.png" %}' alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Cambia por el planeta</h4>
+                        <p>Se centra en la promoción de estilos de vida sostenibles, principalmente en el consumo y la producción de alimentos y de energía.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src='{% static "images/camp2.jpg" %}' alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Chile sin plásticos</h4>
+                        <p>Únete al movimiento ciudadano que busca dejar atrás el uso de plásticos desechables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -7,17 +7,17 @@ def paginaInicio(request):
     return render(request, "home.html", {})
 
 def ong(request):
-    return HttpResponse("<p style='color: red;'>Aquí va la información de ONG.<p>")
+    return render(request, "ong.html", {})
 
 def dioxidoCarbono(request):
-    return HttpResponse("<p style='color: red;'>Aquí va la información de dióxido de carbono.<p>")
+    return render(request, "co2.html", {})
 
 def metano(request):
     metanoLista = Metano.objects.all()
     return render(request, "metano.html", {"listaMetano": metanoLista})
 
 def valparaiso(request):
-    return HttpResponse("<p style='color: red;'>Aquí va la información de Valparaíso.<p>")
+    return render(request, "valparaiso.html", {})
 
 def queHacer(request):
     quehacer =open("../proyectointro/proyectointro/plantillas/quehacer.html", encoding="utf-8")
@@ -28,7 +28,7 @@ def queHacer(request):
     return HttpResponse(documento1)
 
 def cambioClimatico(request):
-    return HttpResponse("<p style='color: red;'>Aquí va la información del cambio climático.<p>")
+    return render(request, "cambio_climatico.html", {})
 
 def politica(request):
     politica =open("../proyectointro/proyectointro/plantillas/politica.html", encoding="utf-8")

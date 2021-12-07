@@ -1,0 +1,70 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio climático</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='{% static "css/cambio_climatico.css" %}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="parrafo">
+            <p>¿Qué es?: 
+                El cambio climático es la variación de la temperatura global del planeta durante extensos periodos de tiempo (millones de años), 
+                ocasionados de forma natural y cíclica pero también por la actividad humana.
+            </p>
+        </section>
+        <section class="parrafo">
+            <p>¿Por que ocurren los cambios climáticos?:
+                Estos ocurren por causas naturales externas e internas del planeta, como los ciclos solares (movimiento y actividad del sol),
+                órbita del planeta tierra (estaciones), efecto invernadero y entre otros.
+            </p>
+        </section>
+        <section class="parrafo">
+            <p>Efecto invernadero:
+                El planeta tierra es radiado por la energía térmica del sol, esta energía es reflectada por la superficie y retenida porciertos 
+                gases (CO2, CH4, N20) en la atmósfera permitiendo mantener una temperatura en el planeta, a mayor presencia de ellos, mayor es la temperatura global. 
+            </p>
+        </section>
+        <section class="parrafo">
+            <p>Calentamiento global:
+                El calentamiento global es producto del cambio climático que consiste en solo el aumento de la temperatura global, 
+                debido a la actividad humana este es más intenso y rápido debido a la emisión de los gases de efecto invernadero, en la actualidad el calentamiento 
+                global solo a demorado aproximadamente 200 años, aumentando la media de temperatura en 1,1°C.
+            </p>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src='{% static "images/planeta.png" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src="img/pointer.webp" alt="">
+
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "images/oso.webp" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src="img/pointer.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "images/industria.webp" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src="img/pointer.webp" alt="">
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

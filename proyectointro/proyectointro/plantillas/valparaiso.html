@@ -1,0 +1,90 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='{% static "css/valparaiso.css" %}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulovalpo">Contaminación en Valparaíso</h1>
+    
+    <p class="pietitulo">En 2016 la región de Valparaíso emitió el 13,2% de los gases de efecto invernadero a nivel nacional, esto con el 9,4% de la población.</p>
+    <p class="pietitulo">A continuación se mostrarán datos extraídos de los inventarios regionales de gases de efecto invernadero (GEI) proporcionados por el gobierno de Chile. En este primer gráfico podemos ver las emisiones de estos gases en la región de Valparaíso, estas medidas en kilotoneladas de CO2 equivalente, 1990 hasta 2016. Cada año con sus respectivas contribuciones en los sectores que producen estas emisiones.</p>
+    <img class="valpo1" src='{% static "images/grafico_valpo_1.png" %}' alt="">
+    <p class="piefoto">Como podemos ver, la emsión de estos gases ha aumentado considerablemente en la región, esto principalmente impulsado por la quema de combustibles fósiles, algo que lamentablemente es una tónica en cuanto a la contaminación de estos gases en casi cualquier registro del mundo.</p>
+    
+    <p class="pietitulo">A continuación tenemos en mayor detalle cada aportación de los sectores que liberan estos gases a la atmósfera en el año 2016.</p>
+    <img class="valpo1" src='{% static "images/grafico_valpo_2.png" %}' alt="">
+    <p class="piefoto">Al analizar este gráfico salta a la vista lo que comentamos en el punto anterior, es decir, podemos ver que al rededor de un 86% de las emisiones provienen directamente de la quema de combustibles, resaltando la quema de combustible necesario para nosotros poder tener electricidad, así como un buen porcentaje también tiene algo tan cotidiano como la quema de combustible necesaria para transportarse en auto.</p>
+
+    <p class="pietitulo">Finalmente veremos una comparativa con las demás regiones así como el balance nacional, miediéndose este en toneladas de CO2 equivalente medidas en un año (2016).</p>
+    <div id="main-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Región/País</th><th>Emisiones totales de GEI (t de CO2 eq)</th><th>Porcentaje de emisiones nacionales de GEI</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>Chile</td><td>6,1</td><td>-</td>
+            </tr>
+            <tr>
+                <td>Arica y Parinacota</td><td>2,9</td><td>0,6%</td>
+            </tr>
+            <tr>
+                <td>Tarapacá</td><td>2,9</td><td>2,0%</td>
+            </tr>
+            <tr>
+                <td>Antofagasta</td><td>6,4</td><td>20%</td>
+            </tr>
+            <tr>
+                <td>Atacama</td><td>21,7</td><td>6,1%</td>
+            </tr>
+            <tr>
+                <td>Coquimbo</td><td>2,9</td><td>2,1%</td>
+            </tr>
+            <tr>
+                <td>Valparaíso</td><td>8,0</td><td>13,2%</td>
+            </tr>
+            <tr>
+                <td>Metropolitana</td><td>3,0</td><td>20,0%</td>
+            </tr>
+            <tr>
+                <td>O´higgins</td><td>4,0</td><td>3,3%</td>
+            </tr>
+            <tr>
+                <td>Maule</td><td>4,4</td><td>4,1%</td>
+            </tr>
+            <tr>
+                <td>Biobío</td><td>7,4</td><td>14,2%</td>
+            </tr>
+            <tr>
+                <td>Araucanía</td><td>3,9</td><td>3,5%</td>
+            </tr>
+            <tr>
+                <td>Los Ríos</td><td>5,9</td><td>2,1%</td>
+            </tr>
+            <tr>
+                <td>Los Lagos</td><td>6,3</td><td>4,8%</td>
+            </tr>
+            <tr>
+                <td>Aysén</td><td>10,2</td><td>1,0%</td>
+            </tr>
+            <tr>
+                <td>Magallanes</td><td>20,5</td><td>3,0%</td>
+            </tr>
+        </table>
+
+    </div>
+    <p class="piefoto">Como observación podemos resaltar el caso de la región Metropolitana y de Antofagasta, ambas aportando con un 20% al total nacional, sin embargo la región Metropolitana al tener más población resulta con un menor índice por habitante de emisiones GEI.  </p>
+    <p class="pietitulo">Si quieres enterarte de más te dejamos este <a href="https://www.indexmundi.com/es/datos/indicadores/EN.ATM.CO2E.KT">enlace</a> a un mapa interactivo en donde podrás comparar las emisiones de gases de efecto invernadero por país.</p>
+</body>
+</html>
