@@ -23,46 +23,33 @@
         <table>
             <thead>
                 <tr>
-                    <th>Actividad</th><th>Emsiones en 2015 (toneladas)</th><th>Emisiones en 2018 (toneladas)</th>
+                    <th>Actividad</th><th>Emsiones en 2015 (toneladas)</th>
                 </tr>
             </thead>
+            {%for i in listaDioxido%}
+                {%if i.año == 2015%}
+                    <tr>
+                    <td>{{i.actividad}}</td><td>{{i.cantidad}}</td>
+                    </tr>
+                {%endif%}
+            {%endfor%}
+        </table>
+    </div>
+    <div id="main-container">
 
-            <tr>
-                <td>Quema de combustibles</td><td>10.788.000</td><td>12.401.000</td>
-            </tr>
-            <tr>
-                <td>Emisiones fugitivas de combustibles</td><td>321</td><td>232</td>
-            </tr>
-            <tr>
-                <td>Industria de minerales</td><td>360.000</td><td>177.000</td>
-            </tr>
-            <tr>
-                <td>Solventes industriales</td><td>10.000</td><td>13.000</td>
-            </tr>
-            <tr>
-                <td>Aplicaion de úrea (en agricultura)</td><td>23.000</td><td>19.000</td>
-            </tr>
-            <tr>
-                <td>Tierras forestales</td><td>905.000</td><td>773.000</td>
-            </tr>
-            <tr>
-                <td>Tierras de cultivo</td><td>134.000</td><td>131.000</td>
-            </tr>
-            <tr>
-                <td>Pastizales</td><td>53.000</td><td>53.000</td>
-            </tr>
-            <tr>
-                <td>Humedales</td><td>84</td><td>84</td>
-            </tr>
-            <tr>
-                <td>Asentamientos</td><td>24.000</td><td>22.000</td>
-            </tr>
-            <tr>
-                <td>Otras tierras</td><td>12.000</td><td>8.000</td>
-            </tr>
-            <tr>
-                <td>Quema abierta de residuos</td><td>1.000</td><td>2.000</td>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Actividad</th><th>Emsiones en 2018 (toneladas)</th>
+                </tr>
+            </thead>
+            {%for i in listaDioxido%}
+                {%if i.año == 2018%}
+                    <tr>
+                    <td>{{i.actividad}}</td><td>{{i.cantidad}}</td>
+                    </tr>
+                {%endif%}
+            {%endfor%}
         </table>
     </div>
     

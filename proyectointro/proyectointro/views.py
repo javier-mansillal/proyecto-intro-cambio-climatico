@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.template import Template, Context
 from django.shortcuts import render
 from apps.metano.models import Metano
+from apps.co2.models import Co2
 
 def paginaInicio(request):
     return render(request, "home.html", {})
@@ -10,7 +11,12 @@ def ong(request):
     return render(request, "ong.html", {})
 
 def dioxidoCarbono(request):
-    return render(request, "co2.html", {})
+    dioxidoLista = Co2.objects.all()
+    nombres = []
+    for i in dioxidoLista:
+        nombres.append(i.actividad)
+    set(nombres)
+    return render(request, "co2.html", {"actividades": nombres, "listaDioxido": dioxidoLista})
 
 def metano(request):
     metanoLista = Metano.objects.all()
